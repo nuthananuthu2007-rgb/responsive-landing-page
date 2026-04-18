@@ -1,0 +1,50 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Temporary height to allow scrolling */
+}
+
+/* Base Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    background-color: transparent; /* Starts transparent */
+    transition: 0.4s ease; /* Smooth transition for color change */
+    z-index: 1000;
+}
+
+/* Navigation Links */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#navbar li {
+    margin: 0 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white; /* Initial text color */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT - Requirement Met */
+#navbar a:hover {
+    color: #00bcd4; /* Change color on hover */
+}
+
+/* SCROLLED STATE - To be triggered by JS */
+#navbar.scrolled {
+    background-color: #222; /* Changes background color on scroll */
+    padding: 10px 0; /* Shrinks the bar slightly */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
